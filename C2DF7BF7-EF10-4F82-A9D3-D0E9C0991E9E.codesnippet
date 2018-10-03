@@ -10,11 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>// 创建
-self.&lt;#var#&gt; = [NSTimer scheduledTimerWithTimeInterval:1.5
-                                                            target:self
-                                              selector:@selector(&lt;#timerMethod#&gt;)
-                                                          userInfo:nil
-                                                           repeats:YES];
+self.&lt;#var#&gt; = [NSTimer scheduledTimerWithTimeInterval:1.5 target:self selector:@selector(&lt;#timerMethod#&gt;) userInfo:nil repeats:YES];
 // 取消
 [self.&lt;#var#&gt; invalidate];
 
@@ -22,7 +18,7 @@ self.&lt;#var#&gt; = [NSTimer scheduledTimerWithTimeInterval:1.5
 	<key>IDECodeSnippetIdentifier</key>
 	<string>C2DF7BF7-EF10-4F82-A9D3-D0E9C0991E9E</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>br_timer</string>
 	<key>IDECodeSnippetTitle</key>

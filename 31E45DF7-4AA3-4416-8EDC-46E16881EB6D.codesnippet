@@ -3,21 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>mark</string>
+	<string>ccc</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - &lt;#注释#&gt;</string>
+	<string>@property (nonatomic, copy) &lt;#type#&gt; *&lt;#name#&gt;;
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D8C239B1-F57F-4975-BFA2-F04B13D75E23</string>
+	<string>31E45DF7-4AA3-4416-8EDC-46E16881EB6D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>mark</string>
+	<string>br property declaration - copy</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>mark</string>
+	<string>br property declaration - copy</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
