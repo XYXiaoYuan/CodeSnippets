@@ -3,29 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>objcs</string>
+	<string>pjson</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    @objc func &lt;#selectorName#&gt;() {
-
-    }
+	<string>                if let jsonValue = result.result.value as? [String: Any] {
+                    let dataJson: NSData! = try? JSONSerialization.data(withJSONObject: jsonValue, options: .prettyPrinted) as NSData
+                    let json = String(data: dataJson as Data, encoding: .utf8)
+                    guard let jsonStr = json else { return  }
+                    print(jsonStr)
+                }
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>37E28557-E818-42E8-99C7-197827B7EDE7</string>
+	<string>F04BA6A7-4BE4-4336-9A42-85C2E7DCCE25</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>objcSelector</string>
+	<string>printJSON</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>objcSelector</string>
+	<string>printJSON</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

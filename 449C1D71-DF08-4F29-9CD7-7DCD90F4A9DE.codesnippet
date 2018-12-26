@@ -3,26 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>objcs</string>
+	<string>tabledele</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    @objc func &lt;#selectorName#&gt;() {
-
+	<string>// MARK: - UITableViewDelegate
+extension &lt;#className#&gt; : UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let &lt;#model#&gt; = &lt;#models#&gt;[indexPath.row]
+ 
     }
+}
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>37E28557-E818-42E8-99C7-197827B7EDE7</string>
+	<string>449C1D71-DF08-4F29-9CD7-7DCD90F4A9DE</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>objcSelector</string>
+	<string>UITableViewDelegate</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>objcSelector</string>
+	<string>UITableViewDelegate</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
