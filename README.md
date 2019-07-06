@@ -7,3 +7,5 @@ Now, it contains the following tools:
 It is used for managing the snippets in xcode.
 
 The default snippets are stored in the ~/Library/Developer/Xcode/UserData/CodeSnippets/
+
+Create by Bruceyuan
