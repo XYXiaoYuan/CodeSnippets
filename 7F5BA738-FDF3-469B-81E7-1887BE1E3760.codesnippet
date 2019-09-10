@@ -3,31 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>tables</string>
+	<string>iff</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// MARK: - 懒加载
-fileprivate var &lt;#property#&gt;: [&lt;#entity#&gt;] = [&lt;#entity#&gt;]() {
-        didSet {
-            tableView.reloadData()
-        }
-    }</string>
+	<string>if &lt;#condition#&gt; {
+            &lt;#code#&gt;
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>1C3BE5AF-A721-44C5-8D84-53E171D8ABFD</string>
+	<string>7F5BA738-FDF3-469B-81E7-1887BE1E3760</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>tableViewSource</string>
+	<string>if</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>tableViewSource</string>
+	<string>if</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
