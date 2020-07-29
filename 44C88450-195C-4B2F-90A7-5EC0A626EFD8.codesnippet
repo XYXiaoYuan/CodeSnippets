@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>brpbf</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private func &lt;#buttonName#&gt;() -&gt; UIButton {
+    let button = UIButton(type: .custom)
+//        button.enlargeEdge = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+    button.backgroundColor = &lt;#backgroundColor#&gt;
+    button.titleLabel?.font = UIFont.regular(15)
+    button.setTitle("&lt;#buttonTitle#&gt;", for: .normal)
+    button.setTitleColor(0x&lt;#hex#&gt;.uiColor, for: .normal)
+    button.setImage(UIImage.ff_named(named: &lt;#imageName#&gt;), for: .normal)
+//    button.imageDirection(.right, spacing: 4)
+    button.addTarget(self, action: #selector(&lt;#buttonAction#&gt;), for: .touchUpInside)
+    return button
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>44C88450-195C-4B2F-90A7-5EC0A626EFD8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>快速创建私有button</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>private button func</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

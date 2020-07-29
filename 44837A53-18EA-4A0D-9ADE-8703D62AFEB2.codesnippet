@@ -3,31 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>cview</string>
+	<string>brpl</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
-		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>class &lt;#ViewName#&gt;: UIView {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}</string>
+	<string>private lazy var &lt;#labelname#&gt;: UILabel = {
+    let label = UILabel()
+    label.font = UIFont.&lt;#font#&gt;
+    label.textColor = 0x&lt;#hex#&gt;.uiColor
+    label.text = "&lt;#name#&gt;"
+    return label
+}()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>1EF4003F-CFA6-4D3F-9ADD-73CC525B609E</string>
+	<string>44837A53-18EA-4A0D-9ADE-8703D62AFEB2</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>快速创建UIView</string>
+	<string>快速创建私有的 label</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>cview</string>
+	<string>private label</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
