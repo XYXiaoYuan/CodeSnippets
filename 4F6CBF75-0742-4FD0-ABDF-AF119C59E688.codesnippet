@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[ ].forEach { addSubview($0) }</string>
+	<string>[&lt;#subview#&gt;, ].forEach { addSubview($0) }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>4F6CBF75-0742-4FD0-ABDF-AF119C59E688</string>
 	<key>IDECodeSnippetLanguage</key>
