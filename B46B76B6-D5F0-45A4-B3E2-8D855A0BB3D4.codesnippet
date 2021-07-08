@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>func foo(_ num: Int) -&gt; Int {
+    return 0
+}
+
+/// 是否是Debug模式
+var isDebug: Bool = true
+
+if isDebug {
+    let num = 2
+    let result = foo(num)
+    print(result)
+} else {
+    while let line = readLine(), let num = Int(line) {
+        let result = foo(num)
+        print(result)
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B46B76B6-D5F0-45A4-B3E2-8D855A0BB3D4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>no</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
