@@ -3,28 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>wheresort</string>
+	<string>listnode</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>&lt;#array#&gt; = &lt;#array#&gt;.sorted {
-    switch ($0.&lt;#firstSort#&gt;, $1.&lt;#firstSort#&gt;) {
-    case let (lhs, rhs) where lhs == rhs:
-        return $0.&lt;#secondSort#&gt; &lt; $1.&lt;#secondSort#&gt;
-    case let (lhs, rhs):
-        return lhs &gt; rhs
-    }
+	<string>public class ListNode {
+    public var val: Int
+    public var next: ListNode?
+    public init() { self.val = 0; self.next = nil; }
+    public init(_ val: Int) { self.val = val; self.next = nil; }
+    public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next; }
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>3A7752B5-07CC-4325-9DA9-9316DAC14A82</string>
+	<string>8672CC2B-4B0E-492E-9EE4-F821E0ED0CBE</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>多级排序规则书写</string>
+	<string>链表定义</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>sorted more condition</string>
+	<string>ListNode</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

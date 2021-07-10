@@ -25,6 +25,23 @@ if isDebug {
         let result = &lt;#functionName#&gt;(num)
         print(result)
     }
+}
+
+/// 全局打印,发布时不触发
+///
+/// - Parameters:
+///   - msg: 需要打印的信息
+///   - file: 所在的 "swift文件"
+///   - line: 打印操作发生在哪一行
+///   - fn: 所在文件的"方法名"
+public func dprint&lt;T&gt;(_ msg: T,
+              file: NSString = #file,
+              line: Int = #line,
+              fn: String = #function) {
+    if isDebug {
+        let prefix = "🏷_\(line)"
+        print(prefix, msg)
+    }
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>7E6D26A6-5806-4CC2-8CBD-27A2869F5F9D</string>
@@ -37,6 +54,6 @@ if isDebug {
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
