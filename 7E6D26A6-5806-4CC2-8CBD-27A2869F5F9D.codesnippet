@@ -27,17 +27,9 @@ if isDebug {
     }
 }
 
-/// 全局打印,发布时不触发
-///
-/// - Parameters:
-///   - msg: 需要打印的信息
-///   - file: 所在的 "swift文件"
-///   - line: 打印操作发生在哪一行
-///   - fn: 所在文件的"方法名"
+/// 全局打印,发布时不触发, isDebug == false时不打印
 public func dprint&lt;T&gt;(_ msg: T,
-              file: NSString = #file,
-              line: Int = #line,
-              fn: String = #function) {
+                      line: Int = #line) {
     if isDebug {
         let prefix = "🏷_\(line)"
         print(prefix, msg)
