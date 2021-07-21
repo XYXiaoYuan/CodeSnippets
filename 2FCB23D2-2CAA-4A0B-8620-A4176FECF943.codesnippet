@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>itoa</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/// 分解一个数的每位数
+/// - Parameter number: 传进来的数字
+/// - Returns: 一个数的 每位数 逆序数字数组
+func itoa(_ number: Int) -&gt; [Int] {
+    var n = number
+    
+    var result: [Int] = [Int]()
+    while n &gt;= 10 {
+        result.append(n % 10)
+        n /= 10
+    }
+    result.append(n)
+    
+    return result
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2FCB23D2-2CAA-4A0B-8620-A4176FECF943</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>分解一个数的每位数字</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>分解数字</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

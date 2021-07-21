@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ldd</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let s = Solution()
+let result = s.&lt;#functionName#&gt;(&lt;#input#&gt;)
+print(result)
+
+//assert(s.maxValue(input1) == 12)
+
+/// 全局打印,发布时不触发, isDebug == false时不打印
+public func print&lt;T&gt;(_ msg: T,
+                      line: Int = #line) {
+    let prefix = "🏷_\(line)"
+    print(prefix, msg)
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2CEFDD8B-7417-4E2E-B411-8A6D4BEE2B03</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Leetcode刷题模版</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Leetcode</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
