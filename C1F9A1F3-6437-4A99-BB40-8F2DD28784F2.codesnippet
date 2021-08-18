@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>injectionhelper</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#if DEBUG
+#import &lt;UIKit/UIKit.h&gt;
+#import &lt;objc/runtime.h&gt;
+#import &lt;objc/message.h&gt;
+#endif
+
+@interface InjectionIIIHelper : NSObject
+@end
+
+@implementation InjectionIIIHelper
+
+#if DEBUG
+/**
+ InjectionIII 热部署会调用的一个方法，
+ runtime给VC绑定上之后，每次部署完就重新viewDidLoad
+ */
+void injected (id self, SEL _cmd) {
+    // 重新加载view
+    [self viewDidLoad];
+    [self viewWillLayoutSubviews];
+    [self viewWillAppear:NO];
+}
+
++ (void)load
+{
+    // 注册项目启动监听
+    __block id observer =
+    [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidFinishLaunchingNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+        // 更改bundlePath
+        [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];
+        
+        [[NSNotificationCenter defaultCenter] removeObserver:observer];
+    }];
+    
+    // 给UIViewController 注册injected 方法
+    class_addMethod([UIViewController class], NSSelectorFromString(@"injected"), (IMP)injected, "v@:");
+}
+#endif
+
+@end</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C1F9A1F3-6437-4A99-BB40-8F2DD28784F2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>给UIViewController动态添加 [injected] 方法 </string>
+	<key>IDECodeSnippetTitle</key>
+	<string>InjectionIIIHelper</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
