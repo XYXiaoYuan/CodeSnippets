@@ -11,17 +11,9 @@
 	<key>IDECodeSnippetContents</key>
 	<string>let s = Solution()
 let result = s.&lt;#functionName#&gt;(&lt;#input#&gt;)
-print(result)
+print("\(s) --- \(result)")
 
-//assert(s.maxValue(input1) == 12)
-
-/// 全局打印,发布时不触发, isDebug == false时不打印
-public func print&lt;T&gt;(_ msg: T,
-                      line: Int = #line) {
-    let prefix = "🏷_\(line)"
-    print(prefix, msg)
-}
-</string>
+//assert(s.maxValue(input1) == 12)</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>2CEFDD8B-7417-4E2E-B411-8A6D4BEE2B03</string>
 	<key>IDECodeSnippetLanguage</key>
