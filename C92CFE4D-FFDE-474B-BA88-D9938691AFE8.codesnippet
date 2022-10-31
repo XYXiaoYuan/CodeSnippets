@@ -3,22 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ccc</string>
+	<string>brif</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, copy) &lt;#type#&gt; *&lt;#name#&gt;;
-</string>
+	<string>if (&lt;#条件#&gt;) {
+    
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>31E45DF7-4AA3-4416-8EDC-46E16881EB6D</string>
+	<string>C92CFE4D-FFDE-474B-BA88-D9938691AFE8</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>br property declaration - copy</string>
+	<string>快速唤了if</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>br property declaration - copy</string>
+	<string>brif</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

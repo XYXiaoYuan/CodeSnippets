@@ -3,22 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ccc</string>
+	<string>brpl</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, copy) &lt;#type#&gt; *&lt;#name#&gt;;
-</string>
+	<string>- (UILabel *)&lt;##&gt;&lt;#name#&gt; {
+    if (!_&lt;#name#&gt;) {
+        UILabel *label = [[UILabel alloc] init];
+        label.font = [UIFont pingFangSCWithWeight:FontWeightStyleRegular size:12];
+        label.textColor = RGBA(0x&lt;#hexColor#&gt;, 1.0);
+        label.text = @"&lt;#text#&gt;";
+        _&lt;#name#&gt; = label;
+    }
+    return _&lt;#name#&gt;;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>31E45DF7-4AA3-4416-8EDC-46E16881EB6D</string>
+	<string>5EB06806-6922-45ED-B635-20B02A161E25</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>br property declaration - copy</string>
+	<string>快速创建私有的 label</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>br property declaration - copy</string>
+	<string>private label oc</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

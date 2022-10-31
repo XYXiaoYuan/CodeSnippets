@@ -3,22 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ccc</string>
+	<string>brblock</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, copy) &lt;#type#&gt; *&lt;#name#&gt;;
-</string>
+	<string>@property (nonatomic, copy) &lt;#returnType#&gt; (^&lt;#blockName#&gt;)(&lt;#arguments#&gt;);
+@property (nonatomic, copy) void (^&lt;#blockName#&gt;)(void);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>31E45DF7-4AA3-4416-8EDC-46E16881EB6D</string>
+	<string>D7F8ECDD-FDC3-460C-9A2A-81BF3A81CC84</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>br property declaration - copy</string>
+	<string>快速创建一个block</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>br property declaration - copy</string>
+	<string>create block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
