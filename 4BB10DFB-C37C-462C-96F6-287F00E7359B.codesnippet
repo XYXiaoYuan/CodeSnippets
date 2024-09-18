@@ -3,26 +3,42 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ssnp</string>
+	<string>brsetup</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>mas_makeConstraints:^(MASConstraintMaker *make) {
+	<string>- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self _setupUI];
+    }
+    return self;
+}
+
+#pragma mark - Private Methods
+- (void)_setupUI
+{
     
-}</string>
+}
+
+#pragma mark - Lazy
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5989B9BC-3B7F-4A82-89A4-79013C944B20</string>
+	<string>4BB10DFB-C37C-462C-96F6-287F00E7359B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>快速唤出mas_make</string>
+	<string>快速生成 setup 代码</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>mas_make</string>
+	<string>view setup</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

@@ -3,26 +3,35 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ssnp</string>
+	<string>brpl</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>mas_makeConstraints:^(MASConstraintMaker *make) {
-    
+	<string>- (UILabel *)&lt;#lable#&gt; {
+    if (!_&lt;#lable#&gt;) {
+        UILabel *label = [[UILabel alloc] init];
+        label.textAlignment = NSTextAlignmentLeft;
+        label.textColor = [UIColor nbBlack90];
+        label.font = [UIFont bold14];
+        _&lt;#lable#&gt; = label;
+    }
+    return _&lt;#lable#&gt;;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5989B9BC-3B7F-4A82-89A4-79013C944B20</string>
+	<string>4A16112B-7BBF-486C-B9C5-C058E23D35AA</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>快速唤出mas_make</string>
+	<string>Label lazy</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>mas_make</string>
+	<string>Private Label lazy</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

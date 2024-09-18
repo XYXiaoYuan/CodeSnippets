@@ -3,33 +3,33 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>brpl</string>
+	<string>brpv</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (UILabel *)&lt;##&gt;&lt;#name#&gt; {
-    if (!_&lt;#name#&gt;) {
-        UILabel *label = [[UILabel alloc] init];
-        label.font = [UIFont pingFangSCWithWeight:FontWeightStyleRegular size:12];
-        label.textColor = RGBA(0x&lt;#hexColor#&gt;, 1.0);
-        label.text = @"&lt;#text#&gt;";
-        _&lt;#name#&gt; = label;
+	<string>- (UIView *)containerView {
+    if (!_containerView) {
+        UIView *view = [[UIView alloc] init];
+        view.backgroundColor = [UIColor nbWhite];
+        _containerView = view;
     }
-    return _&lt;#name#&gt;;
+    return _containerView;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5EB06806-6922-45ED-B635-20B02A161E25</string>
+	<string>23725F05-29CB-4391-B35D-433921971A73</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>快速创建私有的 label</string>
+	<string>view lazy</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>private label oc</string>
+	<string>Private view lazy</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
